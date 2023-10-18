@@ -9,25 +9,180 @@
 /* #region GENERAL */
 body {
   font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  color: white;
+}
+
+.mega-container-top {
+  height: calc(100vh - 90px);
 }
 /* #endregion GENERAL*/
 
 /* #region COMMONS */
+.flex {
+  display: flex;
+}
 /* #endregion COMMONS */
 
 /* #region VARIABLES*/
+:root {
+  --bg-nav: black;
+  --bg-footer: #282828;
+  --bg-main: #141922;
+  --bg-head-main: #080b12;
+  --bg-menu-main: #63666b;
+
+}
 /* #endregion VARIABLES */
 
 /* #region NAV */
+nav {
+  width: 230px;
+  background-color: var(--bg-nav);
+  padding: 0 20px;
+  color: var(--bg-menu-main);
+  overflow: hidden;
+}
+
+#logo-big{
+  height: 90px;
+  line-height: 90px;
+  width: 135px;
+  /* background-color: red; */
+}
+
+#logo-small {
+  display: none;
+}
+
+#logo-big img {
+  vertical-align: middle;
+}
+#menu-nav {
+  margin-bottom: 20px;
+}
+#menu-nav .menu-item {
+  height: 35px;
+}
+
+#menu-nav .menu-item .icon-item {
+  width: 15%;
+}
+
+#menu-nav .menu-item .txt-item {
+  width: 85%;
+  line-height: 35px;
+  vertical-align: middle;
+  padding-left: 8px;
+}
+
+
+nav h4 {
+  color: white;
+  line-height: 35px;
+}
+
+nav .new-pl .new-pl-icon i {
+  font-size: 40px;
+}
+
+nav .new-pl .new-pl-txt {
+  line-height: 40px;
+  vertical-align: middle;
+  padding-left: 8px;
+  font-size: 18px;
+}
+
+.playlists {
+  list-style-type: none;
+  padding: 10px 0;
+  overflow: auto;
+  height: calc(100% - 360px);
+  min-height: 100px;
+}
+
+.playlists li {
+  line-height: 30px;
+}
+
+#download {
+  height: 25px;
+  border-bottom: 1px solid var(--bg-menu-main);
+}
+
+#download .download-icon {
+  width: 10%;
+}
+
+#download .download-txt {
+  width: 90%;
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+#user {
+  height: 30px;
+  margin-top: 10px;
+}
+
+#user .user-icon {
+  width: 30px;
+  background-color: #808080;
+  border-radius: 50px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+#user .user-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+
+#user .user-txt {
+  width: calc(100% - 30px);
+  padding-left: 8px;
+  line-height: 30px;
+  vertical-align: middle;
+  color: white;
+}
+
+
+
+
+
 /* #endregion NAV */
 
 /* #region MAIN */
+main {
+  width: calc(100% - 230px);
+  background-color: var(--bg-main);
+  overflow: auto;
+}
 /* #endregion MAIN */
 
 /* #region FOOTER */
+footer {
+  height: 90px;
+  background-color: var(--bg-footer);
+}
 /* #endregion FOOTER */
 
 /* #region RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+
 /* #endregion RESPONSIVE */
 
 /* #region */
