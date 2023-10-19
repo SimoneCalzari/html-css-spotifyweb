@@ -39,7 +39,6 @@ body {
 nav {
   width: 230px;
   background-color: var(--bg-nav);
-  padding: 0 20px;
   color: #686868;
   overflow: hidden;
 }
@@ -48,20 +47,30 @@ nav {
   height: 90px;
   line-height: 90px;
   width: 135px;
+  padding: 0 20px;
 }
 
 #logo-small {
   display: none;
+  padding: 0 20px;
 }
 
 #logo-big img {
   vertical-align: middle;
 }
+
 #menu-nav {
   margin-bottom: 20px;
 }
+
 #menu-nav .menu-item {
   height: 35px;
+  padding: 0 20px;
+}
+
+#menu-nav .menu-item:first-child {
+  border-left: 3px solid #adff2f;
+  padding-left: 17px;
 }
 
 #menu-nav .menu-item .icon-item {
@@ -75,10 +84,19 @@ nav {
   padding-left: 8px;
 }
 
+#menu-nav .menu-item:first-child .txt-item {
+  color: white;
+}
+
 
 nav h4 {
   color: white;
   line-height: 35px;
+  padding: 0 20px;
+}
+
+nav .new-pl {
+  padding: 0 20px;
 }
 
 nav .new-pl .new-pl-icon i {
@@ -94,7 +112,7 @@ nav .new-pl .new-pl-txt {
 
 .playlists {
   list-style-type: none;
-  padding: 10px 0;
+  padding: 10px 20px;
   overflow: auto;
   height: calc(100% - 360px);
   min-height: 100px;
@@ -107,6 +125,7 @@ nav .new-pl .new-pl-txt {
 #download {
   height: 25px;
   border-bottom: 1px solid var(--bg-menu-main);
+  padding: 0 20px;
 }
 
 #download .download-icon {
@@ -122,6 +141,7 @@ nav .new-pl .new-pl-txt {
 #user {
   height: 30px;
   margin-top: 10px;
+  padding: 0 20px;
 }
 
 #user .user-icon {
@@ -194,16 +214,31 @@ main {
   color: #727579;
 }
 
+#main-menu li:first-child a::after {
+  content: "";
+  border: 2px solid #adff2f;
+  display: block;
+  width: 30%;
+  position: relative;
+  left: 35px;
+  top: 5px;
+}
+
 main section h2 {
-  
+  font-size: 24px;
+  margin: 30px 0;
 }
 
-main section h3 {
-
+main section .albums h3 {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0 10px;
 }
 
-main section h4 {
-
+main section .albums h4 {
+  text-align: center;
+  color: #727579;
+  font-size: 14px;
 }
 
 main section .albums {
@@ -224,6 +259,19 @@ main section .albums .album .album-img img {
   max-width: 100%;
   display: block;
 }
+
+main section > h4 {
+  color: #727579;
+  font-size: 14px;
+  margin: -20px 0 30px;
+}
+
+main > section:nth-of-type(3) .albums .album .album-img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
 
 
 
@@ -255,7 +303,7 @@ footer {
 @media screen and (max-width: 576px) {
   nav {
     width: 50px;
-    padding: 10px 10px;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,14 +322,21 @@ footer {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+    padding: 0 10px;
   }
   
   #menu-nav {
     width: 100%;
   }
 
+  #menu-nav .menu-item:first-child {
+    border-left: none;
+    padding-left: 10px;
+  }
+  
   #menu-nav .menu-item {
     margin-bottom: 10px;
+    padding: 0 10px;
   }
 
   #menu-nav .menu-item .icon-item {
@@ -309,6 +364,7 @@ footer {
     border: none;
     width: 100%;
     margin-bottom: 15px;
+    padding: 0 10px;
   }
 
   #download .download-icon {
@@ -322,6 +378,7 @@ footer {
   
   #user {
     margin-bottom: 5px;
+    padding: 0 10px;
   }
 
   #user .user-icon {
