@@ -154,7 +154,7 @@ main {
   width: calc(100% - 230px);
   background-color: var(--bg-main);
   overflow: auto;
-  padding: 90px 10px;
+  padding: 90px 30px 0 10px;
 }
 
 #main-bar {
@@ -194,6 +194,38 @@ main {
   color: #727579;
 }
 
+main section h2 {
+  
+}
+
+main section h3 {
+
+}
+
+main section h4 {
+
+}
+
+main section .albums {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+main section .albums .album {
+  width: calc((100% - 50px) / 6);
+}
+
+main section .albums .album .album-img {
+  height: 100%;
+  width: 100%;
+}
+
+main section .albums .album .album-img img {
+  max-width: 100%;
+  display: block;
+}
+
+
 
 /* #endregion MAIN */
 
@@ -207,10 +239,16 @@ footer {
 /* #region RESPONSIVE */
 
 @media screen and (max-width: 992px) {
-
+  main section .albums .album {
+    width: calc((100% - 30px) / 4);
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
+  main section .albums .album {
+    width: calc((100% - 10px) / 2);
+  }
 
 }
 
