@@ -285,6 +285,10 @@ main section .albums .album .album-img:hover i {
   display: block;
 }
 
+main section .albums .album .album-img:hover  {
+  cursor: pointer;
+}
+
 main section .albums .album .album-img:hover img {
   opacity: 0.5;
 }
@@ -326,6 +330,7 @@ footer {
 .footer-left  {
   align-items: center;
   padding-left: 10px;
+  gap: 35px;
 }
 
 .footer-left .song .song-cover {
@@ -358,13 +363,11 @@ footer {
 }
 
 .footer-left .song-icon {
-  padding-left: 30px;
+  gap: 15px;
 }
 
 .footer-left .song-icon i {
   color: #878787;
-  padding: 0 5px;
-  font-size: 14px;
 }
 
 .footer-left .song-icon i:hover {
@@ -378,7 +381,6 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  border: 2px solid white;
 }
 
 .footer-center .footer-center-top  {
@@ -407,7 +409,7 @@ footer {
 }
 
 .footer-center .footer-center-bottom .time-num {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .footer-center .footer-center-bottom .time-bar {
@@ -444,11 +446,10 @@ footer {
 
 .footer-right {
   align-items: center;
-  padding-right: 15px;
+  gap: 15px
 }
 
 .footer-right > i {
-  padding: 0 10px;
   font-size: 14px;
 }
 
@@ -457,7 +458,7 @@ footer {
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 2px;
-  margin-left: 10px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -494,9 +495,11 @@ footer {
   main section .albums .album {
     width: calc((100% - 30px) / 4);
   }
-  .ciao {
-    /* width: 75%; */
+
+  .footer-center .footer-center-bottom {
+    width: 75%;
   }
+  
   
 }
 
@@ -505,12 +508,17 @@ footer {
     width: calc((100% - 10px) / 2);
   }
 
-  .footer-left {
-    /* width: 170px; */
+  .footer-center .footer-center-bottom {
+    width: 85%;
+  }
+
+  .footer-left .song-icon {
+    gap: 5px;
+    flex-direction: column;
   }
 
   .footer-left {
-    /* width: 200px; */
+    gap: 25px;
   }
   
 
@@ -525,14 +533,23 @@ footer {
     justify-content: space-between;
   }
 
-
-  .footer-left {
-    /* width: 140px; */
+  .footer-right {
+    gap: 8px;
   }
 
   .footer-left {
-    /* width: 160px; */
+    gap: 15px;
   }
+  .footer-left .song .song-cover {
+    width: 30px;
+    height: 30px;
+    display: flex;
+  }
+  
+  .footer-right #volume {
+    margin-right: 5px;
+  }
+  
 
 
   main {
