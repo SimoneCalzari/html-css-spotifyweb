@@ -84,6 +84,11 @@ nav {
   padding-left: 8px;
 }
 
+#menu-nav .menu-item .txt-item:hover {
+  color: white;
+  cursor: pointer;
+}
+
 #menu-nav .menu-item:first-child .txt-item {
   color: white;
 }
@@ -97,6 +102,11 @@ nav h4 {
 
 nav .new-pl {
   padding: 0 20px;
+}
+
+nav .new-pl:hover {
+  color: white;
+  cursor: pointer;
 }
 
 nav .new-pl .new-pl-icon i {
@@ -122,6 +132,11 @@ nav .new-pl .new-pl-txt {
   line-height: 30px;
 }
 
+.playlists li:hover {
+  color: white;
+  cursor: pointer;
+}
+
 #download {
   height: 25px;
   border-bottom: 1px solid var(--bg-menu-main);
@@ -136,6 +151,11 @@ nav .new-pl .new-pl-txt {
   width: 90%;
   font-size: 14px;
   padding-left: 8px;
+}
+
+#download .download-txt:hover {
+  color: white;
+  cursor: pointer;
 }
 
 #user {
@@ -199,6 +219,7 @@ main {
 
 #main-bar button:hover {
   cursor: pointer;
+  scale: 1.1;
 }
 
 #main-menu {
@@ -212,6 +233,10 @@ main {
 #main-menu li a {
   text-decoration: none;
   color: #727579;
+}
+
+#main-menu li a:hover {
+  color: white;
 }
 
 #main-menu li:first-child a::after {
@@ -253,6 +278,24 @@ main section .albums .album {
 main section .albums .album .album-img {
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+main section .albums .album .album-img:hover i {
+  display: block;
+}
+
+main section .albums .album .album-img:hover img {
+  opacity: 0.5;
+}
+
+main section .albums .album .album-img i {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
 }
 
 main section .albums .album .album-img img {
@@ -270,9 +313,6 @@ main > section:nth-of-type(3) .albums .album .album-img {
   border-radius: 50%;
   overflow: hidden;
 }
-
-
-
 
 
 /* #endregion MAIN */
@@ -311,6 +351,12 @@ footer {
   color: #878787;
 }
 
+.footer-left .song .song-txt  div:last-child:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .footer-left .song-icon {
   padding-left: 30px;
 }
@@ -321,12 +367,18 @@ footer {
   font-size: 14px;
 }
 
+.footer-left .song-icon i:hover {
+  color: white;
+  cursor: pointer;
+}
+
 .footer-center {
   flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  border: 2px solid white;
 }
 
 .footer-center .footer-center-top  {
@@ -341,6 +393,11 @@ footer {
 .footer-center .footer-center-top i:nth-of-type(3) {
   font-size: 30px;
   margin: 0 10px;
+}
+
+.footer-center .footer-center-top i:nth-of-type(3):hover {
+  scale: 1.1;
+  cursor: pointer;
 }
 
 .footer-center .footer-center-bottom {
@@ -358,7 +415,9 @@ footer {
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 2px;
+  position: relative;
 }
+
 
 .footer-center .footer-center-bottom .time-bar div {
   border-radius: 2px;
@@ -366,13 +425,29 @@ footer {
   width: 20%;
 }
 
+.footer-center .footer-center-bottom .time-bar div i {
+  font-size: 10px;
+  position: absolute;
+  top: -3px;
+  left: 20%;
+  display: none;
+}
+
+.footer-center .footer-center-bottom .time-bar div:hover {
+  border:2px solid lawngreen;
+  cursor: pointer;
+}
+
+.footer-center .footer-center-bottom .time-bar div:hover i {
+  display: block;
+}
 
 .footer-right {
   align-items: center;
   padding-right: 15px;
 }
 
-.footer-right i {
+.footer-right > i {
   padding: 0 10px;
   font-size: 14px;
 }
@@ -383,12 +458,30 @@ footer {
   background-color: #5a5a5a;
   border-radius: 2px;
   margin-left: 10px;
+  position: relative;
 }
 
 .footer-right #volume #volume-percent {
   border-radius: 2px;
   border: 2px solid #c1c1c1;
   width: 25%;
+}
+
+.footer-right #volume #volume-percent:hover {
+  border:2px solid lawngreen;
+  cursor: pointer;
+}
+
+.footer-right #volume #volume-percent i {
+  font-size: 10px;
+  position: absolute;
+  top: -3px;
+  left: 25%;
+  display: none;
+}
+
+.footer-right #volume #volume-percent:hover  i {
+  display: block;
 }
 
 
