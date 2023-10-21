@@ -540,17 +540,33 @@ footer {
   .footer-left {
     gap: 15px;
   }
+
   .footer-left .song .song-cover {
     width: 30px;
-    height: 30px;
     display: flex;
+    align-items: center;
   }
   
   .footer-right #volume {
     margin-right: 5px;
   }
   
+  .footer-center .footer-center-top {
+    gap: 15px;
+  }
 
+  .footer-center .footer-center-bottom {
+    gap: 10px;
+  }
+
+  .footer-center .footer-center-top i:nth-of-type(3) {
+    margin: 0 5px;
+  }
+
+  .footer-right #volume {
+    width: 85px;
+  }
+  
 
   main {
     width: calc(100% - 50px);
